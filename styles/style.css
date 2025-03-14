@@ -57,6 +57,7 @@ ol {
   align-self: flex-end;
   border-width: 1px;
   border-color: #fff;
+  border-style: solid; /*Ничего страшного =) люжям свойственно ошибаться*/
   color: #fff;
   font-family: Fira Sans Condensed, sans-serif;
   font-weight: 700;
@@ -133,6 +134,7 @@ ol {
 .search-form__textfield {
   min-width: 225px;
   min-height: 27px;
+  border-style: solid;
   border-color: #fff;
   border-top-width: 1px;
   border-right: none;
@@ -182,7 +184,7 @@ ol {
   background-color: #fff;
 }
 
-.search-form__label:has(.search-form__label-text):hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -217,6 +219,7 @@ ol {
   flex-direction: column;
   grid-area: details;
   justify-content: space-between;
+  min-width: 399px;
   width: 100%;
   height: 100%;
 }
